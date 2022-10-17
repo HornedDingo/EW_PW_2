@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>City</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Все города</h1>
+<a href="/city/filter">Поиск пользователей</a>
+<a href="/city/add">Добавить пользователя</a>
+<div th:each="el : ${cities}">
+    <h3 th:text="${el.name}"></h3>
+</div>
+</body>
+</html>

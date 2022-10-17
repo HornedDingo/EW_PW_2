@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add user</title>
+</head>
+<body>
+<form th:action="${'/user/add'}" method="post">
+  <input type="text" name="username" placeholder="Введите имя"/>  <br>
+  <input type="date" name="birthdate" placeholder="Введите дату рождения"/> <p>Введите дату рождения</p><br>
+  <select name="gender">
+    <option value="1">male</option>
+    <option value="0">female</option>
+  </select> <br>
+  <input type="number" name="height" step="1" placeholder="Введите рост"/>
+  <input type="number" name="salary" step="0.01" placeholder="Введите зарплату"/>
+  <br>
+  <button type="submit">Добавить пользователя</button>
+</form>
+</body>
+</html>
